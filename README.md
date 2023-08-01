@@ -85,3 +85,12 @@ Compiler les dépendances:
 pip-compile dev-requirements.in --generate-hashes
 pip-compile requirements.in --generate-hashes
 ```
+
+## Déploiement
+
+Créer le projet sur Scalingo : [https://dashboard.scalingo.com](https://dashboard.scalingo.com)
+Créer la base de données de l'application sur Scalingo
+Déclarer les variables d'environnement, en prenant comme example le fichier .env.template
+Suivre les instructions de la github action : [https://github.com/kolok/deploy-to-scalingo/tree/v1/](https://github.com/kolok/deploy-to-scalingo/tree/v1/)
+
+Lors du push sur la branch main, le code sera déployé sur Scalingo
