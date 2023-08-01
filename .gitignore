@@ -1,0 +1,17 @@
+# Keep in sync with .prettierignore until we can use several prettierignore files
+# https://github.com/prettier/prettier/issues/8048
+.DS_Store
+.env
+__pycache__
+.venv
+*.bak
+
+# DB
+pgdata
+backup_db
+mysqldata
+
+# JS
+static/collected
+static/compiled
+node_modules
