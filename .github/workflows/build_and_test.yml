@@ -29,7 +29,7 @@ jobs:
           - 5435:5432
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v4
         with:
@@ -47,7 +47,7 @@ jobs:
   node:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v3
         with:
@@ -67,7 +67,7 @@ jobs:
   #   runs-on: ubuntu-latest
   #   if: github.ref == 'refs/heads/main'
   #   steps:
-  #     - uses: actions/checkout@v3
+  #     - uses: actions/checkout@v4
   #     - uses: kolok/deploy-to-scalingo@v1
   #       with:
   #         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
